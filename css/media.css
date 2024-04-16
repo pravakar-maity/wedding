@@ -1,0 +1,62 @@
+@media( max-width:991px){
+    .textbox1 h3, .textbox2 h3 {
+       font-size: 15px;
+    }
+   
+}
+@media( max-width:769px){
+    .block-container{
+        grid-template-columns: auto;
+    }
+    .textbox2 {
+        text-align: left;
+    }
+    /* nav ul{
+        display: none;
+    } */
+    .menu{
+        display: block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #A78656;
+        color: #fff;
+        font-weight: 500;
+    }
+    .about-container h3{
+        font-size: 23px;
+    }
+    .service-container{
+        grid-template-columns: auto;
+    }
+    .team-container{
+        grid-template-columns: auto;
+    }
+    .footer-container{
+        grid-template-columns: auto;
+    }
+    .footer-container h3{
+        text-align: center;
+    }
+    .call-btn{
+        margin:  0 25%;
+    }
+    .bottom-container{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .bottom-container ul li{
+        float: none;
+    }
+    
+}
+@media( max-width:425px){
+    .owl-carousel .owl-item img{
+        height: 50vh;
+    }
+}
+@media( max-width:600px){
+    .owl-carousel .owl-item img{
+        height: 50vh;
+    }
+}

@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color:#fff
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+label.logo{
+    font-size: 30px;
+    color: #A78656;
+    
+    line-height: 80px;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    /* line-height: 80px; */
+    padding-top: 25px;
+}
+nav ul li a{
+    color: #A78656;
+    font-size: 20px;
+    padding: 8px 18px;
+   
+}
+nav ul li a.active, nav ul li a:hover{
+    background-color: #088989;
+    border-radius: 5px;
+    color: #fff;
+}
+#check-btn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #A78656;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    left: 0;
+}
+
+
+@media(max-width:960px){
+    #check-btn{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: #b1e5e5;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        z-index: 999;
+       
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        margin: 15px;
+       
+       
+    }
+} 
+
+
+
+
+
+
+/* header{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+}
+.header-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+}
+.logo{
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 5px;
+    color: #A78656;
+}
+nav{
+    float: right;
+    padding-top: 22px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    font-size: 15px;
+    margin: 10px 20px;
+    color: black;
+    
+}
+nav ul li a:hover{
+    color: #A78656;
+    transition: .7s;
+}  */
+
+
+
+
+
+
+.owl-carousel .owl-item img {
+    height: 100vh;    
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+#block{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.block-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+   grid-template-columns: auto auto;
+    
+    
+    gap: 30px;
+   
+}
+.flex-box{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    
+}
+.flex-box img{
+    width: 100%;
+    /* height: 350px; */
+}
+
+.textbox1{
+    text-align: left;
+}
+.textbox1 h2{
+   
+    font-size: 30px;
+    color: #A78656;
+}
+.textbox1 h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.textbox1 p{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.textbox1 button{
+    width: 150px;
+    height: 50px;
+    background-color: #A78656;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    
+}
+.textbox1 button {
+    color: #fff;
+    font-size: 15px;
+} 
+.textbox1 button:hover{
+    background-color: #fff;
+    border: 1px solid #A78656;
+   
+}
+.textbox1 button:hover{
+    color:#A78656;
+} 
+
+
+.textbox2{
+    text-align: right;
+}
+.textbox2 h2{
+    
+    font-size: 30px;
+    color: #A78656;
+}
+.textbox2 h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.textbox2 p{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    font-weight: 300;
+}
+.textbox2 button{
+    width: 150px;
+    height: 50px;
+    background-color: #A78656;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    float: left;
+
+}
+.textbox2 button{
+    color: #fff;
+    font-size: 15px;
+}
+.textbox2 button:hover{
+    background-color: #fff;
+    border: 1px solid #A78656;
+   
+}
+.textbox2 button:hover{
+    color:#A78656;
+} 
+
+
+
+
+.about{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    
+}
+.about-container{
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    background: url(../image/wd10.jpg);
+    background-size: 100% 100%;
+ } 
+img{
+    width: 100%;
+    /* height: 350px; */
+}
+.about-container h3{
+    text-align: center;
+    padding-top: 160px;
+   
+    font-size: 30px;
+    color: #A78656;
+}
+
+
+#Service{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    text-align: center;
+    background-color: #f1f0ee;
+}
+#Service h2{
+    padding-bottom:10px;
+    color: #A78656;
+}
+#Service h3{
+    padding-bottom:10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.service-container{
+    width: 90%;
+    margin: auto;
+   display: grid;
+   grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.box1{
+    width:100%;
+    height: auto;
+    background-color:transparent;
+    border: 1px solid #A78656;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.textbox h4{
+    font-size: 20px;
+    padding-top: 20px;
+    color: #A78656;
+}
+.textbox p{
+    font-size: 14px;
+    padding-top: 20px;
+}
+.textbox button{
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #A78656;
+    margin: 20px;
+    
+}   
+.textbox button{
+    color: #A78656;
+    font-size: 15px;
+}
+.textbox button:hover{
+    background-color: #A78656;
+    border: none;
+   
+}
+.textbox button:hover{
+    color:#fff;
+}
+
+
+
+ 
+
+
+
+#team{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    text-align: center;
+}
+
+#team h2{
+    padding-bottom:20px;
+    color: #A78656;  
+}
+.team-container{
+    width: 90%;
+    margin: auto;
+   display: grid;
+   grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.box2{
+    width:100%;
+    height: auto;
+    background-color:transparent;
+    border: 1px solid #A78656;
+    border-radius: 10px;
+    padding: 15px;
+}
+.imgbox2{
+    width:50%px;
+    height:auto ;
+    border-radius:50% 50% 50% 50%;
+     margin: 5% 25%;
+  
+    
+
+}
+.imgbox2 img{
+    width:100%;
+    height:100% ;
+    border-radius:50% 50% 50% 50%;
+}
+.content h3{
+font-size: 18px;
+padding-bottom: 15px;
+color: #A78656;
+}
+.content h4{
+    padding-bottom: 15px;
+    
+}
+
+.content p{
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+#footer{
+    width: 100%;
+    height: auto;
+    background: url(../image/wd5.jpg);
+    background-size: 100% 100%;
+    margin: 50px 0px;
+}
+.footer-layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.footer-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+   grid-template-columns: auto auto;
+    padding:10% 0;
+    gap: 30px;
+}
+
+.footer-container h3{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+}
+.call-btn{
+    width: 50%;
+    padding: 15px 0;
+     border-radius: 5px;
+     border: none;
+     float: right;
+     font-size: 18px;
+     color: #A78656;
+}
+ 
+.call-btn:hover{
+    background-color: #A78656;
+   
+    color: #fff;
+}
+
+   
+
+#bottom{
+    width: 100%;
+    height: auto;
+   padding: 5% 0;
+   background-color: #dbcfbc;
+}
+.bottom-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+  
+}
+.bottom-container h2{
+    color: #000;
+    float: left;
+    font-size: 30px;
+}
+.bottom-container ul li{
+    display: inline;
+  float: right;
+  padding: 0 4%;
+}
+
+.bottom-container ul li a img{
+    width: 40px;
+    height: 40px;
+   
+}
+
+.copy a{
+    color:#eae4e4;
+    font-size: 14px;
+}
+
+#copyrights{
+    padding: 10px 0;
+    background-color: #A78656;
+    text-align: center;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
